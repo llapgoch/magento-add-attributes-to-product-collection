@@ -1,0 +1,2 @@
+- Space separate attributes to be added to every loaded product collection
+- Separate to setting the load in listing flags for each attribute
