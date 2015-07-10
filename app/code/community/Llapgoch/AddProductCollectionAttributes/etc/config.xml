@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Llapgoch_AddProductCollectionAttributes>
+			<version>0.1.0</version>
+		</Llapgoch_AddProductCollectionAttributes>
+	</modules>
+	<global>
+		<helpers>
+			<llapgoch_addpcattributes>
+				<class>Llapgoch_AddProductCollectionAttributes_Helper</class>
+			</llapgoch_addpcattributes>
+		</helpers>
+		<models>
+			<llapgoch_addpcattributes>
+				<class>Llapgoch_AddProductCollectionAttributes_Model</class>
+			</llapgoch_addpcattributes>
+		</models>
+	</global>
+	
+	<frontend>
+		<events>
+			<catalog_product_collection_load_before>
+				<observers>
+					<llapgoch_pcattributes_add>
+						<model>llapgoch_addpcattributes/observer</model>
+						<method>addAttributes</method>
+						<type>model</type>
+					</llapgoch_pcattributes_add>
+				</observers>
+			</catalog_product_collection_load_before>
+		</events>
+	</frontend>
+	
+	<default>
+		<llapgoch_addpcattributes>
+			<general>
+				<attributes></attributes>
+			</general>
+		</llapgoch_addpcattributes>
+	</default>
+</config>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<llapgoch translate="label">
+			<label>LLAP-Goch</label>
+			<sort_order>100</sort_order>
+		</llapgoch>
+	</tabs>
+	<sections>
+		<llapgoch_addpcattributes translate="label" module="llapgoch_addpcattributes">
+			<label>Product Attributes</label>
+			<tab>llapgoch</tab>
+			
+			<sort_order>1</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			
+			<groups>
+				<general translate="label">
+					<label>General</label>
+
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<attributes translate="label">
+							<label>Collection Attributes To Add</label>
+							<comment>Space separate attributes to be added to every product collection</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</attributes>
+					</fields>
+				</general>
+			</groups>
+		</llapgoch_addpcattributes>
+	</sections>
+</config>
